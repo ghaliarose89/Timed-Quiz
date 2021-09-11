@@ -1,0 +1,32 @@
+*{
+    margin: 20px;
+}
+h1 { 
+    text-align: center;
+    color:slateblue;
+    margin-top: 10%;
+
+}
+
+.quiz-info{
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    color: rgb(136, 112, 182);
+}
+
+.startBtn{
+    background-color:slateblue;
+    color: rgb(205, 90, 128);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 45%;
+    height: 50px;
+    width: 10%;
+}
+
+.time{
+    color: mediumvioletred;
+    font-size: 20px;
+    margin-left: 90%;
+}
