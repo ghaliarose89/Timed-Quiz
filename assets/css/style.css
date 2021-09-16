@@ -24,9 +24,31 @@ h1 {
     height: 50px;
     width: 10%;
 }
+.answer-btn{
+    background-color:slateblue;
+    color: rgb(12, 1, 4);
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40%;
+    height: 100px;
+    width: 15%;
+
+}
+.answer-btn:hover{
+    background-color: mediumvioletred;
+}
 
 .time{
     color: mediumvioletred;
     font-size: 20px;
     margin-left: 90%;
+}
+.result{
+    margin-left: 40%;
+    font-size: 35px;
+    color: navy;
+    background-color:mediumvioletred;
+    border: 2px,solid, rgb(10, 5, 5);
+
 }
