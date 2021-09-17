@@ -17,7 +17,7 @@ h1 {
 
 .startBtn{
     background-color:slateblue;
-    color: rgb(205, 90, 128);
+    color: rrgb(12, 1, 4);
     font-size: 20px;
     font-weight: bold;
     margin-left: 45%;
@@ -31,7 +31,7 @@ h1 {
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left: 40%;
-    height: 100px;
+    height: 60px;
     width: 15%;
 
 }
@@ -81,4 +81,7 @@ h1 {
     height: 50px;
     width: 7%;
 
+}
+.li-list{
+    text-decoration:none;
 }

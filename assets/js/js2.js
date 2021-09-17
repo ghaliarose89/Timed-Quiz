@@ -2,19 +2,17 @@ var showhighScore = document.getElementById("scoreinfo");
 var highscoreList;
 var backbtn = document.getElementById ("back-Btn");
 
+var storedScores = JSON.parse(localStorage.getItem("High-score")) ||  [];
 
-var storedScores = localStorage.getItem("highscorearr") || [];
-storedScores = JSON.parse(storedScores);
-console.log(storedScores);
 for (var i = 0; i < storedScores.length; i++) {
-        var liElement = document.createElement("li");
-        liElement.textContent = storedScores[i].userInput + " " + storedScores[i].score;
-        console.log(liElement)
-        document.body.appendChild(liElement);
+    var showList = document.createElement("li");
+        showhighScore.appendChild(showList);
+        showList.className="li-list";
+        showList.textContent = storedScores[i].userInput + " " + storedScores[i].score + "/ 5" ;
+        console.log(storedScores);
 }
-liElement.textContent="score";
-showhighScore.textContent="hiahfkzgrf";
-console.log("hi");
+
+
 // backbtn.addEventListener("click", function(){
 //     window.location.replace("./index-2.html");
 // });
