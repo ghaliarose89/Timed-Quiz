@@ -19,7 +19,7 @@ var answer4btn=document.getElementById('answer4');
 var initalInput= document.getElementById('inital');
 var intialbtn=document.getElementById('initalbtn');
 var highscorebtn=document.getElementById('highscroebtn');
-var highscorearr= [];
+var highscorearr= {};
 var questions =
 [
     {   q:"How do you call a function named myFunction?",
@@ -196,11 +196,28 @@ highscorebtn.addEventListener("click", function(event){
     event.preventDefault();
     window.location.replace("./index-2.html");
 });
-intialbtn.addEventListener("click",function(){
+intialbtn.addEventListener("click",function(event){
+    event.preventDefault();
     var newscore = document.getElementById("inital").value;
-    highscorearr.push(newscore);
+    
+    highscorearr= JSON.parse(window.localStorage.getItem("High-score")) || [];
+    var finalScore = {
+        userInput: newscore,
+        score: score,
+    };
+
+    highscorearr.push(finalScore);
     localStorage.setItem ('High-score',JSON.stringify(highscorearr));
     console.log(highscorearr);
-    console.log("newscore "+ newscore);
     window.location.replace("./index-2.html");
+
 });
+// var storedScores = localStorage.getItem("storedScores")
+//             if (storedScores === null) {
+//                 storedScores = [];
+//             } else {
+//                 storedScores = JSON.parse(storedScores);
+//             }
+//             storedScores.push(finalScore)
+//             var newScore = JSON.stringify(storedScores);
+//             localStorage.setItem("storedScores", newScore);
