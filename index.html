@@ -21,16 +21,24 @@
     
         <form id ="quiz-form">
             <button id = "start-btn" class = "startBtn">
-                Strat
+                Start
             </button>
             <div id="answercontainer">
-            <button id="answer1" class=".answer-btn"></button>
-            <button id="answer2" class=".answer-btn"></button>
-            <button id="answer3" class=".answer-btn"></button>
-            <button id="answer4" class=".answer-btn"></button>
+                <button id="answer1" class="answer-btn"></button>
+                <button id="answer2" class="answer-btn"></button>
+                <button id="answer3" class="answer-btn"></button>
+                <button id="answer4" class="answer-btn"></button>
            </div>
-            <div id="result"></div>
-           
+           <div>
+               <input id="inital" type="text" class="inital-input" placeholder="Enter your inital here.">
+               <div class="initalBox">
+               <button id="initalbtn" class="inital"></button>
+                <button id="highscroebtn" class="highscore"></button>
+            </div>
+           </div>
+            <div id="resultcontainer"></div>
+            <p id="result" class="result"></p>
+            
         </form>
         
     </main>
