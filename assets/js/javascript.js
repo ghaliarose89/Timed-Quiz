@@ -75,7 +75,7 @@ var answers = [
         "C": "var colors = 1 = ('red'), 2= ('green'), 3 = ('blue')",
         "D": "var colors = (1:'red', 2:'green' 3: 'blur')",
     },
-    ]
+    ];
     
     answer1btn.style.display='none';
     answer2btn.style.display='none';
@@ -101,29 +101,7 @@ var answers = [
         answer1btn.textContent= answers[questionNumber].A;
         answer2btn.textContent= answers[questionNumber].B;
         answer3btn.textContent= answers[questionNumber].C;
-        answer4btn.textContent= answers[questionNumber].D;
-        answer1btn.addEventListener("click",function(event){
-            event.preventDefault();
-            var x = event.target.innerText;
-            checkAnswer(x);
-        });
-        answer2btn.addEventListener("click",function(event){
-            event.preventDefault();
-            var x = event.target.innerText;
-            checkAnswer(x);
-        });
-        answer3btn.addEventListener("click",function(event){
-            event.preventDefault();
-            var x = event.target.innerText;
-            checkAnswer(x);
-        });
-        answer4btn.addEventListener("click",function(event){
-            event.preventDefault();
-            var x = event.target.innerText;  
-            checkAnswer(x);
-        });
-    
-        
+        answer4btn.textContent= answers[questionNumber].D;    
     };
 
 function checkAnswer(y){
@@ -163,34 +141,66 @@ function checkAnswer(y){
     highscorebtn.style.display='';
     intervalSeconds = 0;
     results.textContent="";
-    questionQuiz.textContent= "Quiz is Over!  your score is " + score + "out of "+ questions.length;
+    questionQuiz.textContent= "Quiz is Over!  your score is " + score + " out of "+ questions.length;
     intialbtn.textContent = 'Enter Inital';
-    intialbtn.addEventListener('click',highScore());
     highscorebtn.textContent = 'High Score';
-    
+ 
 };
 
 function highScore(){
 
-    highscorearr.push(initalInput.textContent);
-    localStorage.setItem ('highscorearr',JSON.stringify(highscorearr));
-    alert("your score is " + score + "out of 5");
-}
+    
+};
+
+
     
 startbtnEl.addEventListener('click', function(event){
     event.preventDefault();
     showquestion();
     if (intervalHold === 0) {
         intervalHold = setInterval(function () {
-            intervalSeconds--;
-            timerEl.textContent = "Time: " + intervalSeconds;
-             if (intervalSeconds <= 0) {
-                clearInterval(intervalHold);
-                timerEl.textContent = "Time's up!";
-                quizOver();
+        intervalSeconds--;
+        timerEl.textContent = "Time: " + intervalSeconds+ " Secs left";
+        if (intervalSeconds <= 0) {
+             clearInterval(intervalHold);
+            timerEl.textContent = "Time's up!";
+            quizOver();
             }
         }, 1000);
     }
    
 }
 );
+answer1btn.addEventListener("click",function(event){
+    event.preventDefault();
+    var x = event.target.innerText;
+    checkAnswer(x);
+});
+answer2btn.addEventListener("click",function(event){
+    event.preventDefault();
+    var x = event.target.innerText;
+    checkAnswer(x);
+});
+answer3btn.addEventListener("click",function(event){
+    event.preventDefault();
+    var x = event.target.innerText;
+    checkAnswer(x);
+});
+answer4btn.addEventListener("click",function(event){
+    event.preventDefault();
+    var x = event.target.innerText;  
+    checkAnswer(x);
+});
+
+highscorebtn.addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.replace("./index-2.html");
+});
+intialbtn.addEventListener("click",function(){
+    var newscore = document.getElementById("inital").value;
+    highscorearr.push(newscore);
+    localStorage.setItem ('High-score',JSON.stringify(highscorearr));
+    console.log(highscorearr);
+    console.log("newscore "+ newscore);
+    window.location.replace("./index-2.html");
+});

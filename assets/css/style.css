@@ -4,7 +4,7 @@
 h1 { 
     text-align: center;
     color:slateblue;
-    margin-top: 10%;
+    margin-top: 5%;
 
 }
 
@@ -41,7 +41,7 @@ h1 {
 
 .time{
     color: mediumvioletred;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 90%;
 }
 .result{
