@@ -174,7 +174,7 @@ function highScore(){
 
     highscorearr.push(initalInput.textContent);
     localStorage.setItem ('highscorearr',JSON.stringify(highscorearr));
-
+    alert("your score is " + score + "out of 5");
 }
     
 startbtnEl.addEventListener('click', function(event){
