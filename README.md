@@ -23,7 +23,7 @@ as  following snips:
 
 
 ## Website
- https://ghaliarose89.github.io/password-generator/
+  https://ghaliarose89.github.io/Timed-Quiz/
 
 
 ### Contribution
