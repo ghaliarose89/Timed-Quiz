@@ -20,6 +20,8 @@ as  following snips:
 
 ![ScreenShot](./assets/Pictures/Capture1.JPG)
 
+![ScreenShot](./assets/Pictures/Capture2.jpg) 
+
 
 
 
