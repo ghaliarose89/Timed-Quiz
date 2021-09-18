@@ -4,7 +4,7 @@
 
 ### Description: 
 The beginning of the assessment shows the instructions:
-* Start: To start the quiz and start 90 seconds countdown.
+* Start button: To start the quiz and start 90 seconds countdown.
 * When the user answer, the next question and answers will show up.
 * When the user answer, the result will show correct or wrong.
 * If the answer is wrong, time will decrease by 5 seconds as a penalty.
