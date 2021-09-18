@@ -17,7 +17,10 @@ The beginning of the assessment shows the instructions:
 At The end of the quiz, Enter initials to save the user initial and score. 
 The High Score button displays a list of saved initials and scores, 
 as  following snips:
-![ScreenShot](./assets/Pictures/Capture1.JPG) 
+
+![ScreenShot](./assets/Pictures/Capture1.JPG)
+
+
 ![ScreenShot](./assets/Pictures/Capture2.jpg) 
 
 
