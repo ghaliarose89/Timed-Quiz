@@ -4,7 +4,7 @@
 
 ### Description: 
 The beginning of the assessment shows the instructions:
-* Start button: To start the quiz and start 90 seconds countdown.
+* Start: To start the quiz and start 90 seconds countdown.
 * When the user answer, the next question and answers will show up.
 * When the user answer, the result will show correct or wrong.
 * If the answer is wrong, time will decrease by 5 seconds as a penalty.
@@ -18,17 +18,17 @@ At The end of the quiz, Enter initials to save the user initial and score.
 The High Score button displays a list of saved initials and scores, 
 as  following snips:
 
+![ScreenShot](./assets/Pictures/Cap2.JPG)
+
+
 ![ScreenShot](./assets/Pictures/Capture1.JPG)
-
-![ScreenShot](./assets/Pictures/Capture2.jpg) 
-
-
+ 
 
 
 
 
 ## Website
-  https://ghaliarose89.github.io/Timed-Quiz/
+ https://ghaliarose89.github.io/password-generator/
 
 
 ### Contribution
